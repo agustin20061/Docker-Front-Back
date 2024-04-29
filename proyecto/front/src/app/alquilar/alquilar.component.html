@@ -1,0 +1,12 @@
+<title>Detalle del Libro</title>
+
+<div class="book-detail" >
+        <h1 class="book-title">"{{libro.titulo}}"</h1>
+        <p class="book-author">Autor: {{libro.autor}}</p>
+        <p class="book-metadata">Editorial: {{libro.editorial}}</p>
+        <p class="book-metadata">ISBN: {{libro.id}}</p>
+        <p class="book-metadata">Año de Creación: {{libro.anio}}</p>
+        <p class="book-metadata">Páginas: {{libro.cantPag}}</p>
+      
+</div>
+<button (click)="modificarLibro($event)" class="btn btn-primary" >Alquilar</button>

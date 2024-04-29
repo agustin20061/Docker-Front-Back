@@ -1,0 +1,34 @@
+<form id="formulario" class="todo" (submit)="modificarLibro($event)">
+    <div class="form-group">
+      <h5>¿Cual libro desea modificar?</h5>
+
+    </div>
+
+    <div class="form-group">
+        <label for="titulo">Titulo</label>
+        <input name="titulo" type="text" class="form-control" id="titulo" value="{{libro.titulo}}">
+        
+      </div>
+
+      <div class="form-group">
+        <label for="autor">Autor</label>
+        <input name="autor"type="text" class="form-control" id="autor"  value= "{{libro.autor}}">
+      </div>
+
+      <div class="form-group">
+        <label for="año">Año</label>
+        <input name="año"type="number" class="form-control" id="año"  value="{{libro.anio}}">
+      </div>
+
+      <div class="form-group">
+        <label for="paginas">Cantidad de paginas</label>
+        <input name="paginas"type="number" class="form-control" id="paginas" value="{{libro.cantPag}}">
+      </div>
+
+      <div class="form-group">
+        <label for="editorial">Editorial</label>
+        <input name="editorial"type="text" class="form-control" id="editorial"  value="{{libro.editorial}}">
+      </div>
+    
+      <button type="submit" class="btn btn-primary" >Submit</button>
+  </form>

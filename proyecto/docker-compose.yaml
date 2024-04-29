@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  backend:
+    build:
+      context: back/express-gen-ts/
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    networks:
+      - mi-red
+    container_name: express-angular-dockerfiles-back-end
+
+  frontend:
+    build:
+      context: front/
+      dockerfile: Dockerfile
+    ports:
+      - "4200:4200"
+    networks:
+      - mi-red
+    container_name: express-angular-dockerfiles-front-end
+
+networks:
+  mi-red:
+    name: mi-red

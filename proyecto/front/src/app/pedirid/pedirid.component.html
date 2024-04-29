@@ -1,0 +1,9 @@
+
+<form id="formulario" class="todo" (ngSubmit)="submitForm()">
+  <div class="form-group">
+    <h5>¿Cuál libro deseas modificar?</h5>
+    <label for="ISBN">ISBN</label>
+    <input name="num" type="number" class="form-control" id="id" placeholder="ISBN" [(ngModel)]="ISBN">
+  </div>                
+  <button type="submit" class="btn btn-primary" [routerLink]="['/Modificar',ISBN]">Submit</button>
+</form>

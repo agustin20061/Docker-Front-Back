@@ -1,0 +1,8 @@
+<form id="formulario" class="todo" (ngSubmit)="cancelarTurno()" #form="ngForm">
+  <div class="form-group">
+    <h5>¿Cual libro desea borrar?</h5>
+    <label for="idlibro"> ISBN</label>
+    <input name="idlibro" type="number" class="form-control" id="idlibro" placeholder="idlibro" [(ngModel)]="idlibro" #idlibroInput="ngModel">
+  </div>                
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

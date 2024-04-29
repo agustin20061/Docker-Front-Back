@@ -1,0 +1,12 @@
+<div class="catalogo" *ngFor= "let libro of libros" >
+    <div class="librosa" *ngIf="!libro.prestado">
+        <img src=".\assets\libros.jpg">
+        <div class="info">
+            <h2>{{libro.titulo}}</h2>
+            <p>{{libro.autor}}</p>
+            <p>{{libro.editorial}}</p>
+            <button class="btn btn-primary" [routerLink]="['/Alquilar', libro.id]">Alquilar</button>
+        </div>
+    </div>
+</div>
+<!---->
